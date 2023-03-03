@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/* 
+color code 
+  background-color: white;
+  Mint Green #66FFE5
+  Begonia #FF7377
+  vivid sky blue #56cbf9
+*/
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .box{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .box:nth-child(1){
+    background-color: #66FFE5;
+}
+
+.container .box:nth-child(2){
+    background-color: #56cbf9;
+}
+
+.container .box:nth-child(3){
+    background-color: #FF7377;
+}
+
+.container .box .icon {
+    font-size: 55px;
+}
+
+.container .box .content{
+    display: none;
+
+}
+
+.container .box:hover .content{
+    display: block;
+    
+
+}
+
+.container .box:hover .content h1{
+    text-align: center;
+}
+
+.container .box:hover .content p{
+    text-align: justify;
+}
